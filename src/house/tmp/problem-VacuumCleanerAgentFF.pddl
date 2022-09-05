@@ -1,0 +1,7 @@
+;; problem file: problem-VacuumCleanerAgentFF.pddl
+(define (problem VacuumCleanerAgentFF)
+    (:domain VacuumCleanerAgentFF)
+    (:objects vacuum_cleaner_first_floor off on bedroom_1 bedroom_2 living_room kitchen walk_in_closet bathroom pantry)
+	(:init (vacuum vacuum_cleaner_first_floor) (state off) (state on) (set_status vacuum_cleaner_first_floor off) (room bedroom_1) (room bedroom_2) (room living_room) (room kitchen) (room walk_in_closet) (room bathroom) (room pantry) (not_clean bedroom_1) (not_clean bedroom_2) (not_clean living_room) (not_clean kitchen) (not_clean walk_in_closet) (not_clean bathroom) (not_clean pantry) (not_suck bedroom_1) (not_suck bedroom_2) (not_suck living_room) (not_suck kitchen) (not_suck walk_in_closet) (not_suck bathroom) (not_suck pantry) (adj bedroom_1 walk_in_closet) (adj walk_in_closet bedroom_1) (adj bedroom_1 kitchen) (adj kitchen bedroom_1) (adj living_room kitchen) (adj kitchen living_room) (adj bedroom_2 kitchen) (adj kitchen bedroom_2) (adj pantry kitchen) (adj kitchen pantry) (adj bathroom living_room) (adj living_room bathroom) (in_room vacuum_cleaner_first_floor bathroom) (not_people_in_room bedroom_1) (not_people_in_room bedroom_2) (not_people_in_room living_room) (not_people_in_room kitchen) (not_people_in_room walk_in_closet) (not_people_in_room bathroom) (not_people_in_room pantry))
+	(:goal (and (clean kitchen) (clean living_room) (clean bathroom) (clean bedroom_1) (clean walk_in_closet) (clean bedroom_2) (clean pantry)))
+)
