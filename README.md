@@ -24,18 +24,11 @@ There is a house agent that can control almost all the devices, moreover in the 
 
 To set up and running this project locally you have to follow these simple steps.
 
-### Prerequisites
-
-* npm
-  ```sh
-  npm install
-  ```
-
 ### Installation
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/davidelobba/ASA_project.js.git
+   git clone https://github.com/davidelobba/ASA_Project_2021_2022.git
    ```
 2. Install NPM packages
    ```sh
